@@ -4,6 +4,7 @@
 gris_oscura = #333333
 gris_claro = #818181
 rojo = #ad475c
+gris_mas_claro = #f0f0f0
 
 body
 	font-family 'Varela Round' , sans-serif
@@ -122,8 +123,90 @@ img
 		line-height 3.5em
 		margin 0
 		text-align center
-	
+.left
+	float left
+.right
+	float right	
 .playing
+	
 	&.small
 		width 20em
+.round
+    border-radius 50%
+    overflow hidden	
+    
+.wrap
+	width 1000px
+.close-icon
+	position absolute
+	top .5em
+	color gris_claro
+	right .5em
+	font-size 1.2em
+	
+.search-icon
+	position absolute
+	left .5em
+	top .8em
+	color gris_claro
+
+		
+
+ @media screen and (min-width:480px)
+
+		.song
+			&:nth-child(even)
+				margin-right 1em
+		.image
+			img
+				width 100%
+				height auto
+		.playing
+			&.medium
+				width auto
+.input
+	border 1px solid gris_claro
+	height 2.5em
+	border-radius 5px
+	padding 0 1em 0 2em
+	
+				
+@media screen and (min-width:1000px)
+	body
+		background gris_mas_claro
+	.button-menu 
+		display none
+	.menu
+		display block
+		background gris_mas_claro
+		.item
+			float left
+	.header
+		height auto
+		.title
+			display none
+	.isotipo
+		width 122px
+	.logo
+		padding 1.3em 0
+		overflow hidden
+	.avatar
+		width 38px
+		height 38px
+	.username
+		color gris_claro
+		position relative
+		top 9px
+		margin-left .5em
+		&:after
+			content ""
+			border-left 7px solid transparent
+			border-top 9px solid gris_claro
+			border-right 7px solid transparent
+			margin-left .4em
+			display inline-block
+		
+		
+			
+		
 		
